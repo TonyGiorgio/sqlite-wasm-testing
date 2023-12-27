@@ -1,0 +1,13 @@
+[workspace]
+resolver = "2"
+
+members = [
+    "my-rust-crate",
+    "my-main-crate",
+]
+
+[profile.release.package.my-main-crate]
+opt-level = "z"
+
+[profile.release.package.my-rust-crate]
+opt-level = "z"
